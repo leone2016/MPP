@@ -1,5 +1,4 @@
 package lesson3.lab.prob3;
-
 public abstract class Property {
     private Address address;
 
@@ -11,4 +10,12 @@ public abstract class Property {
     }
 
     public abstract double computeRent();
+
+    @Override
+    public String toString() {
+        return "\nProperty{" +
+                "address=" + address.getCity() + " " + address.getStreet() + ", " + address.getState() + " " + address.getZip() +
+                ", rent=" + computeRent() +
+                "}\n";
+    }
 }

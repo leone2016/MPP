@@ -20,8 +20,23 @@ public class Admin {
 		return totalRent;
 	}
 
-//	public static Property[] findPropertyByCity(String city) {
-//		Property[] properties = new Property[3];
-//
-//	}
+	/**
+	 * Finds properties in the given array that are located in the specified city.
+	 *
+	 * @param city the city to search for properties
+	 * @return an array of properties located in the specified city
+	 */
+	public static Property[] findPropertyByCity(Property[] properties, String city) {
+		Property[] result = new Property[properties.length];
+		int count = 0;
+		for (Property property : properties) {
+			if (property.getAddress().getCity().equalsIgnoreCase(city)) {
+				result[count++] = property;
+			}
+		}
+		// Resize the result array to the actual number of found properties
+		Property[] finalResult = new Property[count];
+		System.arraycopy(result, 0, finalResult, 0, count);
+		return finalResult;
+	}
 }

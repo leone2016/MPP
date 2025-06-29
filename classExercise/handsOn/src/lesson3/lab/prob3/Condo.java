@@ -1,6 +1,7 @@
 package lesson3.lab.prob3;
 
 
+import java.util.List;
 
 public class Condo extends Property {
 	private int numberOfFloors;
