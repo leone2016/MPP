@@ -4,7 +4,7 @@ import java.util.*;
 import lesson05.lecture.factorymethods6.otherpackage.DataRecord;
 import lesson05.lecture.factorymethods6.otherpackage.Database;
 import lesson05.lecture.factorymethods6.studreport.GradeReport;
-import lesson05.lecture.factorymethods6.studreport.StudentAndReport;
+import lesson05.lecture.factorymethods6.studreport.IStudentAndReport;
 import lesson05.lecture.factorymethods6.studreport.StudentGradeReportFactory;
 
 
@@ -17,9 +17,7 @@ public class Main {
 		Collection<DataRecord> data = Database.h.values();
 		List<GradeReport> reports = new ArrayList<>();
 		for(DataRecord d : data) {
-			StudentAndReport sr 
-			  = StudentGradeReportFactory
-			      .createStudentAndReport(d.getName(), d.getGrade());
+			IStudentAndReport sr = StudentGradeReportFactory.createStudentAndReport(d.getName(), d.getGrade());
 			reports.add(sr.getReport());	
 		}
 		

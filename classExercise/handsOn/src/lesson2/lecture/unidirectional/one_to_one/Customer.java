@@ -15,6 +15,7 @@ public class Customer {
     public String getCustomerName() {
         return customerName;
     }
+
     public ShoppingCart getShoppingCart() {
         return shoppingCart;
     }

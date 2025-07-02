@@ -24,9 +24,9 @@ public class Order {
 
     @Override
     public String toString() {
-        return "Order{" +
+        return "\nOrder{" +
                 "orderDate=" + orderDate +
                 ", items=" + Arrays.toString(items.toArray()) +
-                '}';
+                "}\n";
     }
 }

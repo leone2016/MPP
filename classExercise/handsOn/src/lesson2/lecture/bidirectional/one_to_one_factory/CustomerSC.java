@@ -1,4 +1,4 @@
-package lesson2.lecture.unidirectional.bidirectional.one_to_one_factory;
+package lesson2.lecture.bidirectional.one_to_one_factory;
 
 public class CustomerSC {
     public static Customer createCustomer(String name) {

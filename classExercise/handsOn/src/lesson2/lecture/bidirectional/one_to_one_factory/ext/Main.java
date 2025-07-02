@@ -1,12 +1,15 @@
-package lesson2.lecture.unidirectional.bidirectional.one_to_one.ext;
+package lesson2.lecture.bidirectional.one_to_one_factory.ext;
 
-import lesson2.lecture.unidirectional.bidirectional.one_to_one.Customer;
-import lesson2.lecture.unidirectional.bidirectional.one_to_one.Item;
-import lesson2.lecture.unidirectional.bidirectional.one_to_one.ShoppingCart;
+
+import lesson2.lecture.bidirectional.one_to_one_factory.Customer;
+import lesson2.lecture.bidirectional.one_to_one_factory.CustomerSC;
+import lesson2.lecture.bidirectional.one_to_one_factory.Item;
+import lesson2.lecture.bidirectional.one_to_one_factory.ShoppingCart;
 
 public class Main {
     public static void main(String[] args) {
-        Customer customer = new Customer("Leo");
+        Customer customer = CustomerSC.createCustomer("Leonardo");
+        //Customer customer = new Customer("Leo");
         //ShoppingCart sp = new ShoppingCart(customer);
 
         ShoppingCart shoppingCart = customer.getShoppingCart();

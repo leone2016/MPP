@@ -12,6 +12,7 @@ public class ShoppingCart {
     public void addItem(Item item) {
         this.items.add(item);
     }
+
     public List<Item> getItems() {
         return items;
     }

@@ -20,6 +20,6 @@ final public class GradeReport implements Comparable<GradeReport> {
 	}
 	@Override
 	public int compareTo(GradeReport o) {
-		return grade.compareTo(o.grade);
+		return grade.compareTo(o.grade );
 	}
 }

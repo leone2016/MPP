@@ -4,8 +4,7 @@ package lesson05.lecture.factorymethods6.studreport;
 final public class StudentGradeReportFactory {
 	private StudentGradeReportFactory(){}
 	
-	public static StudentAndReport createStudentAndReport(
-			String name, String grade) {
+	public static IStudentAndReport createStudentAndReport(String name, String grade) {
 		GradeReport g = new GradeReport(grade);
 		Student st = new Student(name);
 		g.setStudent(st);

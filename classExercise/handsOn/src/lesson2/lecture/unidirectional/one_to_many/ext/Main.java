@@ -22,7 +22,5 @@ public class Main {
 
         System.out.printf("Customer Name: \n" + customer.getCustomerName()+" \n Ordered: "+ customer.getOrders());
 
-
-
     }
 }

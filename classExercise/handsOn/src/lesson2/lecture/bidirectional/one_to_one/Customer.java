@@ -1,4 +1,4 @@
-package lesson2.lecture.unidirectional.bidirectional.one_to_one;
+package lesson2.lecture.bidirectional.one_to_one;
 
 public class Customer {
     private String customerName;
